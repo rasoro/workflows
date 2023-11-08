@@ -22,8 +22,8 @@ func TestActiveConnections(t *testing.T) {
 	connection_number := os.Getenv("CONNECTION_NUMBER")
 	numConnections, _ := strconv.Atoi(connection_number)
 	if numConnections == 0 {
-		log.Println("connection number config not set, using default to: ", numConnections)
 		numConnections = 10
+		log.Println("connection number config not set, using default to: ", numConnections)
 	}
 	log.Println("configured connection number ", numConnections)
 
