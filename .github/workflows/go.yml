@@ -29,6 +29,7 @@ jobs:
         postgresql db: test
         postgresql user: test
         postgresql password: test
+        postgresql arguments: postgres -N 300
 
     - name: Set up Go
       uses: actions/setup-go@v4
