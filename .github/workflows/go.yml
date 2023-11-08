@@ -39,4 +39,4 @@ jobs:
       run: go test -v -p=1 ./...
       env:
         CONNECTION_NUMBER: ${{ inputs.connection_number}}
-        CONN_STR: ${{ inputs.connection_string }}
+        CONNECTION_STRING: ${{ inputs.connection_string }}
