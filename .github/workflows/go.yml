@@ -36,4 +36,7 @@ jobs:
         go-version: '1.20'
 
     - name: Test
-      run: go test -v ./...
+      run: go test -v -p=1 ./...
+      env:
+        CONNECTION_NUMBER: ${{ inputs.connection_number}}
+        CONN_STR: ${{ inputs.connection_string }}
